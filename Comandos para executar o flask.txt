@@ -5,3 +5,7 @@ venv\Scripts\activate
 set FLASK_APP=app.py
 
 flask run
+
+git remote add origin https://github.com/Lucasoxi91/FinalWeb
+
+pip install gunicorn
