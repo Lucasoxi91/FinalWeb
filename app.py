@@ -7,7 +7,7 @@ import io
 app = Flask(__name__)
 
 # Diretório onde os scripts Python estão localizados
-SCRIPTS_DIR = os.path.join(os.getcwd(), 'scripts')
+SCRIPTS_DIR = os.path.join(os.path.dirname(__file__), 'scripts')
 
 def list_scripts():
     return [f for f in os.listdir(SCRIPTS_DIR) if os.path.isfile(os.path.join(SCRIPTS_DIR, f)) and f.endswith('.py')]
